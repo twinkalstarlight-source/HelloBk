@@ -1,0 +1,1023 @@
+/* =====================================================
+   HELLO AI SPOKEN ENGLISH APP
+   PROFESSIONAL WEBSITE CSS
+===================================================== */
+
+
+/* =========================
+   RESET
+========================= */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #17204a;
+  background: #f7f9ff;
+  line-height: 1.6;
+}
+
+
+a {
+  text-decoration: none;
+}
+
+
+/* =========================
+   HERO
+========================= */
+
+.hero {
+
+  min-height: 650px;
+
+  color: white;
+
+  background:
+
+    radial-gradient(
+      circle at 85% 20%,
+      rgba(96, 115, 255, .45),
+      transparent 30%
+    ),
+
+    radial-gradient(
+      circle at 15% 90%,
+      rgba(0, 220, 255, .18),
+      transparent 28%
+    ),
+
+    linear-gradient(
+      135deg,
+      #101b87 0%,
+      #193bc7 48%,
+      #137ce8 100%
+    );
+
+  overflow: hidden;
+}
+
+
+/* =========================
+   NAVBAR
+========================= */
+
+.navbar {
+
+  width: min(1120px, 92%);
+
+  margin: auto;
+
+  padding: 22px 0;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+}
+
+
+.brand {
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 12px;
+}
+
+
+.brand-icon {
+
+  width: 46px;
+
+  height: 46px;
+
+  display: grid;
+
+  place-items: center;
+
+  border-radius: 14px;
+
+  background: rgba(255,255,255,.16);
+
+  border:
+    1px solid
+    rgba(255,255,255,.25);
+
+  font-size: 25px;
+}
+
+
+.brand strong,
+.brand span {
+
+  display: block;
+}
+
+
+.brand strong {
+
+  font-size: 20px;
+}
+
+
+.brand span {
+
+  font-size: 12px;
+
+  opacity: .85;
+}
+
+
+.nav-download {
+
+  padding: 11px 18px;
+
+  color: #15228d;
+
+  background: white;
+
+  border-radius: 14px;
+
+  font-weight: 800;
+
+  transition: .2s ease;
+}
+
+
+.nav-download:hover {
+
+  transform: translateY(-2px);
+
+}
+
+
+/* =========================
+   HERO CONTENT
+========================= */
+
+.hero-content {
+
+  width: min(1120px, 92%);
+
+  margin: 45px auto 0;
+
+  display: grid;
+
+  grid-template-columns:
+    1.35fr
+    .65fr;
+
+  gap: 55px;
+
+  align-items: center;
+}
+
+
+/* =========================
+   BADGE
+========================= */
+
+.badge {
+
+  display: inline-block;
+
+  padding: 8px 13px;
+
+  border-radius: 99px;
+
+  background:
+    rgba(255,255,255,.13);
+
+  border:
+    1px solid
+    rgba(255,255,255,.22);
+
+  margin-bottom: 18px;
+
+  font-size: 12px;
+
+  font-weight: 900;
+
+  letter-spacing: 1px;
+}
+
+
+/* =========================
+   HERO TITLE
+========================= */
+
+.hero h1 {
+
+  font-size:
+    clamp(
+      42px,
+      6vw,
+      70px
+    );
+
+  line-height: 1.02;
+
+  letter-spacing: -2px;
+}
+
+
+.hero h1 span {
+
+  color: #cfe7ff;
+}
+
+
+/* =========================
+   HERO DESCRIPTION
+========================= */
+
+.hero-text p {
+
+  max-width: 610px;
+
+  margin: 22px 0;
+
+  font-size: 18px;
+
+  color: #e8efff;
+}
+
+
+/* =========================
+   HERO BUTTONS
+========================= */
+
+.hero-buttons {
+
+  display: flex;
+
+  gap: 12px;
+
+  flex-wrap: wrap;
+}
+
+
+.primary-btn,
+.secondary-btn,
+.download-big {
+
+  display: inline-flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  border-radius: 14px;
+
+  font-weight: 800;
+
+  transition: .2s ease;
+}
+
+
+.primary-btn {
+
+  padding: 14px 21px;
+
+  color: #15228d;
+
+  background: white;
+
+  box-shadow:
+    0 12px 28px
+    rgba(0,0,0,.18);
+}
+
+
+.secondary-btn {
+
+  padding: 14px 21px;
+
+  color: white;
+
+  border:
+    1px solid
+    rgba(255,255,255,.35);
+
+  background:
+    rgba(255,255,255,.10);
+}
+
+
+.primary-btn:hover,
+.secondary-btn:hover,
+.download-big:hover {
+
+  transform: translateY(-2px);
+
+}
+
+
+/* =========================
+   MINI POINTS
+========================= */
+
+.mini-points {
+
+  display: flex;
+
+  gap: 18px;
+
+  flex-wrap: wrap;
+
+  margin-top: 25px;
+
+  color: #dbe7ff;
+
+  font-size: 14px;
+
+  font-weight: 700;
+}
+
+
+/* =========================
+   AI CARD
+========================= */
+
+.hero-card {
+
+  position: relative;
+
+  padding: 50px 25px;
+
+  border-radius: 35px;
+
+  text-align: center;
+
+  background:
+    rgba(255,255,255,.12);
+
+  border:
+    1px solid
+    rgba(255,255,255,.25);
+
+  backdrop-filter: blur(12px);
+
+  box-shadow:
+    0 25px 70px
+    rgba(0,0,0,.22);
+}
+
+
+.glow {
+
+  position: absolute;
+
+  width: 150px;
+
+  height: 150px;
+
+  left: 50%;
+
+  top: 25px;
+
+  transform:
+    translateX(-50%);
+
+  border-radius: 50%;
+
+  background: #7ee9ff;
+
+  filter: blur(45px);
+
+  opacity: .55;
+}
+
+
+.robot {
+
+  position: relative;
+
+  font-size: 95px;
+
+  margin-bottom: 15px;
+}
+
+
+.hero-card h2 {
+
+  font-size: 29px;
+
+  letter-spacing: 3px;
+}
+
+
+.hero-card p {
+
+  color: #dce8ff;
+}
+
+
+/* =========================
+   GENERAL SECTION
+========================= */
+
+.section {
+
+  width: min(1120px, 92%);
+
+  margin: auto;
+
+  padding: 90px 0;
+}
+
+
+.section-heading {
+
+  max-width: 700px;
+
+  margin-bottom: 35px;
+}
+
+
+.eyebrow {
+
+  display: inline-block;
+
+  color: #4260d6;
+
+  margin-bottom: 8px;
+
+  font-size: 12px;
+
+  font-weight: 900;
+
+  letter-spacing: 1.5px;
+}
+
+
+.section h2,
+.showcase h2,
+.download-section h2 {
+
+  font-size:
+    clamp(
+      30px,
+      4vw,
+      46px
+    );
+
+  line-height: 1.1;
+}
+
+
+.section-heading p {
+
+  margin-top: 12px;
+
+  color: #65708e;
+}
+
+
+/* =========================
+   FEATURES GRID
+========================= */
+
+.feature-grid {
+
+  display: grid;
+
+  grid-template-columns:
+    repeat(4, 1fr);
+
+  gap: 17px;
+}
+
+
+/* =========================
+   FEATURE CARD
+========================= */
+
+.feature-card {
+
+  padding: 23px;
+
+  min-height: 185px;
+
+  border-radius: 22px;
+
+  background: white;
+
+  border:
+    1px solid
+    #e8ebf6;
+
+  box-shadow:
+    0 12px 35px
+    rgba(33, 50, 120, .07);
+
+  transition: .2s ease;
+}
+
+
+.feature-card:hover {
+
+  transform:
+    translateY(-5px);
+
+  box-shadow:
+    0 18px 45px
+    rgba(33, 50, 120, .13);
+}
+
+
+.feature-icon {
+
+  font-size: 32px;
+
+  margin-bottom: 10px;
+}
+
+
+.feature-card h3 {
+
+  font-size: 19px;
+
+  margin-bottom: 5px;
+}
+
+
+.feature-card p {
+
+  color: #68728d;
+
+  font-size: 14px;
+}
+
+
+/* =========================
+   APP SHOWCASE
+========================= */
+
+.showcase {
+
+  padding:
+    90px
+    max(4%, calc((100% - 1120px) / 2));
+
+  background:
+    linear-gradient(
+      135deg,
+      #eef3ff,
+      #f8fbff
+    );
+
+  display: grid;
+
+  grid-template-columns:
+    1fr
+    1fr;
+
+  gap: 70px;
+
+  align-items: center;
+}
+
+
+.showcase-text p {
+
+  max-width: 540px;
+
+  color: #65708e;
+
+  margin: 18px 0 25px;
+}
+
+
+/* =========================
+   PHONE / SCREENSHOT
+========================= */
+
+.phone-wrap {
+
+  display: flex;
+
+  justify-content: center;
+}
+
+
+.phone {
+
+  width:
+    min(
+      310px,
+      78vw
+    );
+
+  padding: 9px;
+
+  border-radius: 38px;
+
+  background: #111827;
+
+  box-shadow:
+    0 25px 60px
+    rgba(20,30,80,.25);
+}
+
+
+.phone img {
+
+  display: block;
+
+  width: 100%;
+
+  height: auto;
+
+  border-radius: 30px;
+}
+
+
+/* =========================
+   DEVELOPER SECTION
+========================= */
+
+.developer-section {
+
+  width: min(1120px, 92%);
+
+  margin: 70px auto;
+}
+
+
+.developer-card {
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 25px;
+
+  padding: 32px;
+
+  border-radius: 25px;
+
+  background: white;
+
+  border:
+    1px solid
+    #e8ebf6;
+
+  box-shadow:
+    0 15px 40px
+    rgba(33, 50, 120, .08);
+}
+
+
+.developer-icon {
+
+  width: 70px;
+
+  height: 70px;
+
+  flex-shrink: 0;
+
+  display: grid;
+
+  place-items: center;
+
+  border-radius: 20px;
+
+  font-size: 34px;
+
+  background: #eef3ff;
+}
+
+
+.developer-info h2 {
+
+  margin-bottom: 10px;
+
+  font-size: 25px;
+}
+
+
+.developer-info p {
+
+  margin-top: 5px;
+
+  color: #65708e;
+}
+
+
+.developer-info a {
+
+  color: #3158d8;
+
+  font-weight: 700;
+}
+
+
+/* =========================
+   DOWNLOAD SECTION
+========================= */
+
+.download-section {
+
+  width: min(1120px, 92%);
+
+  margin: 75px auto;
+
+  padding: 42px;
+
+  border-radius: 28px;
+
+  color: white;
+
+  background:
+    linear-gradient(
+      135deg,
+      #1724a5,
+      #157be5
+    );
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  gap: 25px;
+
+  box-shadow:
+    0 22px 55px
+    rgba(24,48,170,.2);
+}
+
+
+.download-section .eyebrow {
+
+  color: #bcd8ff;
+}
+
+
+.download-section p {
+
+  color: #e2ecff;
+
+  margin-top: 8px;
+}
+
+
+.download-big {
+
+  flex-shrink: 0;
+
+  padding: 16px 23px;
+
+  color: #15228d;
+
+  background: white;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+
+  padding: 30px 5%;
+
+  text-align: center;
+
+  color: #68728d;
+
+  background: white;
+
+  border-top:
+    1px solid
+    #e8ebf6;
+}
+
+
+.footer-brand {
+
+  color: #17204a;
+
+  margin-bottom: 8px;
+}
+
+
+footer p {
+
+  font-size: 13px;
+
+  margin-top: 4px;
+}
+
+
+footer a {
+
+  color: #3158d8;
+
+  font-weight: 700;
+}
+
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 850px) {
+
+
+  .hero-content,
+  .showcase {
+
+    grid-template-columns: 1fr;
+
+  }
+
+
+  .hero {
+
+    min-height: auto;
+
+    padding-bottom: 65px;
+
+  }
+
+
+  .hero-content {
+
+    margin-top: 30px;
+
+  }
+
+
+  .hero-card {
+
+    max-width: 420px;
+
+    width: 100%;
+
+    margin: auto;
+
+  }
+
+
+  .feature-grid {
+
+    grid-template-columns:
+      repeat(2, 1fr);
+
+  }
+
+
+  .download-section {
+
+    flex-direction: column;
+
+    align-items: flex-start;
+
+  }
+
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 520px) {
+
+
+  .navbar {
+
+    padding-top: 15px;
+
+  }
+
+
+  .nav-download {
+
+    padding:
+      9px 12px;
+
+    font-size: 13px;
+
+  }
+
+
+  .brand-icon {
+
+    width: 40px;
+
+    height: 40px;
+
+  }
+
+
+  .hero h1 {
+
+    font-size: 43px;
+
+  }
+
+
+  .hero-text p {
+
+    font-size: 16px;
+
+  }
+
+
+  .hero-buttons {
+
+    width: 100%;
+
+  }
+
+
+  .primary-btn,
+  .secondary-btn {
+
+    width: 100%;
+
+  }
+
+
+  .mini-points {
+
+    gap: 10px;
+
+  }
+
+
+  .feature-grid {
+
+    grid-template-columns: 1fr;
+
+  }
+
+
+  .section,
+  .showcase {
+
+    padding-top: 65px;
+
+    padding-bottom: 65px;
+
+  }
+
+
+  .download-section {
+
+    padding: 30px 24px;
+
+  }
+
+
+  .download-big {
+
+    width: 100%;
+
+  }
+
+
+  .developer-card {
+
+    align-items: flex-start;
+
+    padding: 24px;
+
+  }
+
+
+  .developer-icon {
+
+    width: 55px;
+
+    height: 55px;
+
+    font-size: 27px;
+
+  }
+
+
+  .developer-info h2 {
+
+    font-size: 21px;
+
+  }
+
+}
